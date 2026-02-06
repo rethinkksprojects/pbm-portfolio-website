@@ -1,0 +1,127 @@
+@font-face {
+    font-family: Inter;
+    src: url('fonts/web/InterDisplay-Regular.woff2') format('woff2');
+    src: url('fonts/web/InterDisplay-Bold.woff2') format('woff2');
+    src: url('fonts/web/InterDisplay-SemiBold.woff2') format('woff2');  
+    src: url('fonts/web/Inter-Regular.woff2') format('woff2');
+    src: url('fonts/web/Inter-Bold.woff2') format('woff2');
+    src: url('fonts/web/Inter-SemiBold.woff2')format('woff2');
+}
+
+body {
+    font-family: Inter, sans-serif; 
+    background-color: rgb(22, 22, 22);
+    color:rgb(255, 255, 255);
+}
+
+.navigation {
+    text-size-adjust: auto;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: rgb(20, 20, 20);
+    outline-color: rgb(255, 255, 255);
+    outline-width: 0px;
+    padding: 25px;
+    margin-bottom: 25px;
+    grid-template-columns: repeat(4, auto);
+    font-family: Inter, sans-serif;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* Make all links white */
+}
+
+
+.heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    .reyhan-image {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .heading::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.Main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: center;
+    text-align: center;
+}
+
+.goal-list {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.documentation-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.project-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin: 30px auto;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+}
+
+.project-buttons a {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 14px 44px;
+    background-image: linear-gradient(to bottom, rgb(221, 221, 221), rgb(59, 59, 59));
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #4a4a4a;
+    min-width: 280px;
+    text-align: center;
+    transition: transform 0.12s ease, background-color 0.12s ease;
+    box-shadow: none;
+}
+
+.project-buttons a:hover {
+    transform: translateY(-3px);
+    background-image: linear-gradient(to bottom, rgb(34, 34, 34), rgb(12, 12, 12));
+}
+
+/* Documentation button (single, centered) */
+.doc-button {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 36px;
+    background-image: linear-gradient(to bottom, rgb(221, 221, 221), rgb(59, 59, 59));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #4a4a4a;
+    margin-top: 12px;
+    transition: transform 0.12s ease, background-color 0.12s ease;
+}
+
+.doc-button:hover {
+    transform: translateY(-3px);
+    background-image: linear-gradient(to bottom, rgb(34, 34, 34), rgb(12, 12, 12));
+}
